@@ -3,16 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital India</title>
+    <title>Document</title>
 </head>
 
-<style>
-    h1{
-    
+    <style>
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+body {
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px 0;
     text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* --- Buttons --- */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #e9ecef;
+    color:  #007bff;
+    border: 1px solid  #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #dee2e6;
+}
+
+
+/* --- Navbar --- */
+.navbar {
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: orange;
     }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4b5563;
+      font-weight: 600;
+    }
+
+    nav :hover {
+      color: #0b66ff;
+    }
+
+
+/* --- Hero Section --- */
+.hero {
+    background: url(Picture/castle.jpg) center center/cover no-repeat; /* Placeholder background image path */
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+/* Dark overlay to make text readable */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
 </style>
 <body>
-    <h1>Digital India 2047</h1>
+    
+
+    <header class="navbar">
+        <div class="logo">Viksit Bharat 2047</div>
+        <nav>
+
+        <ul class="nav-links">
+            <li> <a href="#about">Home</a></li>
+             <li> <a href="#offer">Vission</a></li>
+            <li><a href="#parks">Focus Areas</a></li>
+            <li><a href="#resort">Roadmap</a></li>
+            <li><a href="#">Comunity</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+           
+        </nav>
+        
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Viksit Bharat</h1>
+            
+           
+
+            
+        </div>
+    </section>
+
+
 </body>
 </html>
