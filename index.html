@@ -3,180 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viksit India 2047</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cal+Sans&family=Concert+One&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Pacifico&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
-    <style>
-
-
-
+<style>
+   
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; 
 }
 
 body {
-    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
     color: #333;
-    background-color: #f8f9fa;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px 0;
-    text-align: center;
-}
-
-h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-/* --- Buttons --- */
-.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
+a {
     text-decoration: none;
-    display: inline-block;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s;
-}
+/*  Navigation Bar */
 
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-.btn-secondary {
-    background-color: #e9ecef;
-    color:  #007bff;
-    border: 1px solid  #007bff;
-    transition: background-color 0.3s;
-}
-
-.btn-secondary:hover {
-    background-color: #dee2e6;
-}
-
-
-/* --- Navbar --- */
 .navbar {
-    position: sticky;
-    top: 0%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: white; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 50;
+    background-color: #dae4f9; 
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
+.logo {
+  
+   width: 20%;
+}
 
-    .logo {
-      font-weight: 700;
-      font-size: 20px;
-      color: orange;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #4b5563;
-      font-weight: 600;
-    }
-
-    nav :hover {
-      color: #0b66ff;
-    }
-
-
-/* --- Hero Section --- */
-.hero {
-    background: url(Picture/castle.jpg) center center/cover no-repeat; /* Placeholder background image path */
-    height: 60vh; 
+.navbar nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    z-index: 1;
 }
 
-/* Dark overlay to make text readable */
-.hero::before {
+.navbar nav ul li {
+    margin-right: 25px;
+}
+
+.navbar nav a {
+    color:#007bff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #125fb2;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.join-button {
+    padding: 10px 20px;
+    border: none;
+    background-color:#007bff;
+    border-color: white;  
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-button:hover {
+    background-color:#0056b3 ;
+     border: 2px solid #0056b3;
+  
+}
+
+/*  Hero Section */
+
+.hero-section {
+    position: relative;
+    height: 500px; 
+    background: url(Pictures/flag.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+ 
+}
+
+.hero-section::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
 .hero-content {
-    z-index: 3;
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
+.hero-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 24px;
+.hero-content p {
+    font-size: 18px;
+    font-weight: 300;
     margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.hero-buttons button {
+    padding: 12px 30px;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.btn-primary  {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.btn-primary a {
+    color: white;}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+/* About Mission */
+.About-mission-section {
+    padding: 50px 50px 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-query{
+    text-align: left;
+    font-size: medium;
+    color:#0056b3 ;
+
+}
+.section-subquery{
+    text-align: left;
+    font-size: 14px;
+    color:#171717 ;
+
+}
+.section-subtitle {
+    text-align: left;
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+
+
+/*card*/
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    background-color: #e9ecef; 
+}
+
+
+.card-text {
+    padding: 20px;
+    
+}
+
+.card-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.card-text p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/*  Responsive */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar nav {
+        display: none; 
+    }
+    
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .card-image {
+        
+        width: 100%;
+        height: 200px;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+   
 }
 </style>
 <body>
-    
 
     <header class="navbar">
-        <div class="logo">Viksit Bharat 2047</div>
+        <div class="logo">
+            <img src="Pictures/viksit.png" alt="viksit India">
+        </div>
         <nav>
+            <ul>
+                 <li><a href="#about">About</a></li>
+                <li><a href="#vision">Vision 2047</a></li>
+                <li><a href="#">Goals</a></li>
+                <li><a href="#">Govt.Initiatives</a></li>
+                 <li><a href="#">Success Stories</a></li>
+                  <li><a href="#">Get Involved</a></li>
+                   <li><a href="#">Contact</a></li>
 
-        <ul class="nav-links">
-            <li> <a href="#about">Home</a></li>
-             <li> <a href="#offer">Vission</a></li>
-            <li><a href="#parks">Focus Areas</a></li>
-            <li><a href="#resort">Roadmap</a></li>
-            <li><a href="#">Comunity</a></li>
-            <li><a href="#">Contact</a></li>
             </ul>
-           
         </nav>
-        
+        <button class="join-button">Join the Mission</button>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the Viksit Bharat</h1>
-            
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Viksit India 2047: Building a Smart, Self-Reliant, and Technologically Advanced Nation</h1>
+                <p>A National Mission to Transform India into a Global Innovation Leader by 2047.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <a href="#vision">Explore Vision 2047</a></button>
+                    <button class="btn-secondary">Join the Mission</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="About-mission-section">
+            <div id ="about">
+            <h2 class="section-title">About the Mission</h2>
+            <h3 class="section-query">⭐Why the Year 2047 Was Chosen for Viksit Bharat</h3>
+            <p class="section-subtitle">The vision of Viksit Bharat 2047 represents India’s collective aspiration to become a developed nation by the time it celebrates 100 years of independence. The year 2047 holds deep symbolic and strategic significance, marking a century of freedom and progress since India’s independence in 1947. This milestone year embodies the spirit of a self-reliant, inclusive, and globally leading India.</p>
+            <h3 class="section-query">📅The Significance of the Year 2047</h3>
+             <p class="section-subtitle">The choice of 2047 is not random—it is rooted in history, vision, and long-term planning.
+             Here’s why this particular year was chosen:</p>
+             <h4 class="section-subquery">Centenary of Independence:</h4>
+              <p class="section-subtitle">In 2047, India will complete 100 years of freedom. It is the perfect moment to reflect on the nation’s journey—from colonial rule to a strong, self-confident democracy—and set new benchmarks for the next century.</p>
+             <h4 class="section-subquery">Long-Term Development Vision:</h4>
+              <p class="section-subtitle">Major transformations—economic, social, and technological—take decades to achieve. Setting 2047 as a target year gives India 25 years (from 2022) to execute a comprehensive roadmap across all sectors: infrastructure, education, health, innovation, and governance.</p>
+                <h4 class="section-subquery">Alignment with Global Goals:</h4>
+              <p class="section-subtitle">The timeline aligns closely with United Nations’ Sustainable Development Goals (SDGs) and other international growth visions. It ensures that India’s progress contributes meaningfully to global sustainability and equity.</p>
+                <h4 class="section-subquery">Generational Transition:</h4>
+              <p class="section-subtitle">By 2047, the youth of today will be the leaders, innovators, and policymakers of tomorrow. This long-term vision empowers young Indians to shape the destiny of a new, vibrant Bharat.</p>
+
+         
+            </div>
            
-
+            <h2 class="section-title">Vision 2047</h2>
+            <div id ="vision">
             
-        </div>
-    </section>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="Pictures/overview.jpg"  class="card-image">
+                    <div class="card-text">
+                        <h3>Overview of Viksit India 2047</h3>
+                        <p>Understand the core objectives and long-term goals of the Viksit India 2047 mission.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Pictures/key pillars.jpg" class="card-image">
+                    <div class="card-text">
+                        <h3>Key Pillars of Transformation</h3>
+                        <p>Explore the foundational pillars driving India's transformation, including technology, sustainability, and human capital.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="Pictures/timeline.jpg"  class="card-image">
+                    <div class="card-text">
+                        <h3>Timeline and Milestones</h3>
+                        <p>Track the progress and key milestones set for achieving the Viksit India 2047 vision.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Pictures/citizen.jpg" class="card-image">
+                    <div class="card-text">
+                        <h3>Impact on Citizens</h3>
+                        <p>Learn how the mission will improve the quality of life for all citizens through enhanced services and opportunities.</p>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <img src="Pictures/global.jpg"  class="card-image">
+                    <div class="card-text">
+                        <h3>Global Positioning Strategy</h3>
+                        <p>Discover India's strategy to become a global leader in innovation and technology by 2047.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Pictures/infrastructure.jpg"  class="card-image">
+                    <div class="card-text">
+                        <h3>Digital Infrastructure Development</h3>
+                        <p>Explore initiatives to build a robust and inclusive digital infrastructure across the nation.</p>
+                 </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
