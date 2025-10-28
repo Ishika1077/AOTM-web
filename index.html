@@ -248,11 +248,304 @@ a {
     color: #6c757d;
 }
 
+
+
+     section {
+      padding: 2rem;
+      
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      
+      padding-left: 0.8rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    
+
+
+
+/* Section Title */
+.section-topic {
+    text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  max-width: 1100px;
+ 
+  padding-left: 12px;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+/* Goals Container */
+.goals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: flex-start;
+}
+
+/* Goal Card */
+.goal-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  width: 280px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.goal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.goal-icon {
+  font-size: 30px;
+  background-color: #e8f0fe;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.goal-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.goal-text {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+/* Main Section */
+.main-topic {
+  text-align: center;
+  padding: 30px 15px;
+}
+.main-topic h2 {
+  font-size: 26px;
+  color: #0f172a;
+}
+.main-topic p {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+
+/* Mission Cards */
+.card-mission {
+  max-width: 700px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card-mission h3 {
+  font-size: 18px;
+  color: #1e3a8a;
+}
+
+/* Focus Area Section */
+.focus-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0 20px;
+  color: #111;
+}
+
+.focus {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 750px;
+  background: #fff;
+  margin: 15px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.focus img {
+  width: 50%;
+  min-width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+.focus .text {
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+}
+.focus h4 {
+  margin-top: 0;
+  color: #000;
+  font-size: 16px;
+}
+.focus p {
+  font-size: 14px;
+  color: #555;
+}
+
+.focus :hover
+{
+
+background-color: rgba(193, 207, 250);
+height: 200px;
+
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero h2 {
+  font-size: 26px;
+  color: #0f172a;
+}
+.hero p {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 30px;
+}
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slide img {
+  width: 70%;
+  height: 350px;
+  object-fit: cover;
+  min-height: 250px;
+}
+.slide-txt {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  margin-top: 30px;
+}
+.slide-txt h3 {
+  color: #000;
+  font-size: 18px;
+}
+.slide-txt p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.btn-blue {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* Stories Section */
+.stories {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.story-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.story-head h3 {
+  font-size: 20px;
+  color: #0f172a;
+}
+.story-head .view {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card-success {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: left;
+}
+.card-success img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.c-txt {
+  padding: 15px;
+}
+.c-txt h4 {
+  font-size: 15px;
+  margin: 5px 0;
+  color: #000;
+}
+.c-txt p {
+  font-size: 13px;
+  color: #555;
+}
+.btn-sm {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /*  Responsive */
 @media (max-width: 992px) {
-    .navbar {
-        padding: 10px 20px;
-    }
+   
 
     .navbar nav {
         display: none; 
@@ -276,9 +569,22 @@ a {
         flex-direction: column;
         text-align: center;
     }
-    
-   
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .goals-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .goal-card {
+    width: 90%;
+  }
+}
+
+
 </style>
 <body>
 
@@ -288,11 +594,11 @@ a {
         </div>
         <nav>
             <ul>
-                 <li><a href="#about">About</a></li>
-                <li><a href="#vision">Vision 2047</a></li>
-                <li><a href="#">Goals</a></li>
-                <li><a href="#">Govt.Initiatives</a></li>
-                 <li><a href="#">Success Stories</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#vision">Vision 2047</a></li>
+                  <li><a href="#goal">Goals</a></li>
+                  <li><a href="#initiative">Govt.Initiatives</a></li>
+                  <li><a href="#success">Success Stories</a></li>
                   <li><a href="#">Get Involved</a></li>
                    <li><a href="#">Contact</a></li>
 
@@ -314,7 +620,7 @@ a {
             </div>
         </section>
         
-        <section class="About-mission-section">
+        <section style="max-width: 1100px;" class="About-mission-section">
             <div id ="about">
             <h2 class="section-title">About the Mission</h2>
             
@@ -399,7 +705,207 @@ a {
                 </div>
             </div>
         </section>
-    </main>
+
+<section style="max-width: 1100px;"class="goals-section">
+    <div id="goal">
+  <h2 class="section-topic">Core Goals</h2>
+
+  <div class="goals-container">
+    <!-- Single Goal Card -->
+    <div class="goal-card" >
+      <div class="goal-icon">💰</div>
+      <h3 class="goal-title">Economic Prosperity</h3>
+      <p class="goal-text">
+        Achieve a GDP of $30 trillion, becoming one of the world’s largest economies.
+      </p>
+    </div>
+
+    <div class="goal-card">
+      <div class="goal-icon">🌱</div>
+      <h3 class="goal-title">Sustainability</h3>
+      <p class="goal-text">
+        Become a leader in renewable energy and environmental sustainability.
+      </p>
+    </div>
+
+    <div class="goal-card">
+      <div class="goal-icon">🚀</div>
+      <h3 class="goal-title">Technological Advancement</h3>
+      <p class="goal-text">
+        Promote innovation and technological advancement across all sectors.
+      </p>
+    </div>
+
+
+
+    <div class="goal-card">
+      <div class="goal-icon">🎓</div>
+      <h3 class="goal-title">Education & skills</h3>
+      <p class="goal-text">
+       Transforming the education system to focus on innovation and critical thinking.
+      </p>
+    </div>
+
+
+     <div class="goal-card">
+      <div class="goal-icon">🏥</div>
+      <h3 class="goal-title">Healthcare for All</h3>
+      <p class="goal-text">
+       Ensuring every Indians has access to affordable and excellent healthcare services.
+      </p>
+    </div>
+
+ <div class="goal-card">
+      <div class="goal-icon">🌍</div>
+      <h3 class="goal-title">Global Leadership and Diplomacy</h3>
+      <p class="goal-text">
+Strengthening India's role on the world stage through strategic partnerships and diplomacy.
+      </p>
+    </div>
+
+
+  </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Main Section -->
+  <main class="main-topic">
+    <div id="initiative">
+    <h2>Future-Ready Skills for a Digital Bharat</h2>
+    <p>Empowering our citizens with the skills needed to thrive in a technologically advanced India by 2047.</p>
+
+    <!-- Mission -->
+    <section class="card-mission">
+      <h3>🌐 Skill India Mission</h3>
+      <p>The Skill India Mission is a monumental initiative to provide vocational training and certification to millions of Indian youth. By aligning skills with industry demands and fostering an entrepreneurial spirit, we are building a workforce that is not just employed, but empowered.</p>
+    </section>
+
+    <section class="card-mission">
+      <h3>💻 Digital Skilling Initiatives</h3>
+      <p>Through various government programs, we are committed to enhancing digital literacy and providing advanced training in emerging technologies. This includes cutting-edge fields like Artificial Intelligence, coding, cybersecurity, and green technology to position India as a global leader.</p>
+    </section>
+
+    <!-- Focus Areas -->
+    <h3 class="focus-title">Key Focus Areas</h3>
+
+    <div class="focus">
+      <img src="Pictures/digital literacy.png" alt="Digital Literacy">
+      <div class="text">
+        <h4>Digital Literacy Programs</h4>
+        <p>Initiatives to ensure every citizen possesses basic digital literacy, unlocking access to online services, information, and opportunities for a more inclusive society.</p>
+      </div>
+    </div>
+
+    <div class="focus">
+      <div class="text">
+        <h4>AI & Data Science Courses</h4>
+        <p>Specialized training programs in Artificial Intelligence and Data Science to create a talent pool capable of driving innovation and meeting the global demand for skilled professionals.</p>
+      </div>
+      <img src="Pictures/ai learning.png" alt="AI Learning">
+    </div>
+
+    <div class="focus">
+      <img src="Pictures/youth.png" alt="Youth Empowerment">
+      <div class="text">
+        <h4>Youth Empowerment Schemes</h4>
+        <p>Targeted schemes designed to empower our youth with employable skills, foster innovation, and support their active and meaningful participation in the digital economy.</p>
+      </div>
+    </div>
+
+    <div class="focus ">
+     
+      <div class="text">
+        <h4>Collaboration and Partnerships</h4>
+        <p>The government is actively collaborating with academia and industry leaders. This synergy ensures our training programs are up-to-date and aligned with future workforce needs, strengthening India's global position.</p>
+      </div>
+
+       <img src="Pictures/collaboration.png" alt="Collaboration">
+    </div>
+    </div>
+  </main>
+  
+
+       <!-- Hero Section -->
+  <section class="hero">
+    <div id="success">
+    <h2>Stories of a Rising India</h2>
+    <p>Explore the successes on the path to 2047 and witness the transformation of a nation.</p>
+
+    <div class="slide">
+      <img src="Pictures/women entre..png" alt="Women Entrepreneurs">
+      <div class="slide-txt">
+        <h3>Empowering Women Entrepreneurs</h3>
+        <p>Providing financial and educational support to foster a new wave of female business leaders, driving economic independence and innovation across the country.</p>
+        <button class="btn-blue">Read More</button>
+      </div>
+    </div>
+</div>
+    
+  </section>
+
+  <!-- Stories Section -->
+  <section class="stories">
+    <div class="story-head">
+      <h3>Explore More Stories</h3>
+      <a href="#" class="view">View All</a>
+    </div>
+
+    <div class="cards">
+
+      <div class="card-success">
+        <img src="Pictures/healthcare tech.png" alt="Healthcare Tech">
+        <div class="c-txt">
+          <h4>Innovations in Healthcare Tech</h4>
+          <p>Pioneering affordable medical devices and telemedicine.</p>
+          <button class="btn-sm">Read More</button>
+        </div>
+      </div>
+
+      <div class="card-success">
+        <img src="Pictures/education.png" alt="Education Next Gen">
+        <div class="c-txt">
+          <h4>Transforming Education for the Next Gen</h4>
+          <p>Implementing innovative learning methods for the future.</p>
+          <button class="btn-sm">Read More</button>
+        </div>
+      </div>
+
+      <div class="card-success">
+        <img src="Pictures/clean energy.png" alt="Clean Energy">
+        <div class="c-txt">
+          <h4>Clean Energy Revolution</h4>
+          <p>Leading the world in solar power generation and adoption.</p>
+          <button class="btn-sm">Read More</button>
+        </div>
+      </div>
+
+      <div class="card-success">
+        <img src="Pictures/railway.png" alt="Modern Railways">
+        <div class="c-txt">
+          <h4>Modernizing National Railways</h4>
+          <p>Upgrading networks for faster, safer, and efficient travel.</p>
+          <button class="btn-sm">Read More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
