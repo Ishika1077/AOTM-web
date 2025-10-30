@@ -21,7 +21,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #f8f9fa; 
+    background-color:#dae4f9; 
 }
 
 a {
@@ -30,11 +30,28 @@ a {
 
 /*  Navigation Bar */
 
+
+ header 
+    { 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+   
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 50px; 
+    z-index: 1000; 
+  
+    }
+   
 .navbar {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+   
     background-color: #dae4f9; 
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
@@ -58,12 +75,15 @@ a {
     font-size: 14px;
     font-weight: 400;
     transition: color 0.3s;
+   position: relative;
 }
 
 .navbar nav a:hover {
     color: #125fb2;
     font-weight: 800;
     text-decoration: underline;
+    
+    
 }
 
 .join-button {
@@ -88,7 +108,8 @@ a {
 
 .hero-section {
     position: relative;
-    height: 500px; 
+    margin-top: 60px;
+    height: 600px; 
     background: url(Pictures/flag.jpg) no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -206,6 +227,7 @@ a {
     grid-template-columns: 1fr 1fr; 
     gap: 30px;
     margin-top: 30px;
+    height: 500px;
 }
 
 .card {
@@ -286,6 +308,7 @@ a {
   flex-wrap: wrap;
   gap: 70px;
   justify-content: flex-start;
+ 
 }
 
 /* Goal Card */
@@ -538,10 +561,87 @@ height: 200px;
 
 
 
+/* Footer container */
+.footer {
+  background-color: #ffffff;
+  padding: 40px 80px;
+  border-top: 1px solid #e2e6eb;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Columns */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-column p, 
+.footer-column a, 
+.footer-column li {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer-column a:hover {
+  color: #007bff;
+}
+
+/* Contact Form */
+.idea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.idea-form input,
+.idea-form textarea {
+  padding: 10px;
+  border: 1px solid #d1d9e6;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.idea-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.idea-form button:hover {
+  background-color: #0056b3;
+}
 
 
-
-
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
 
 /*  Responsive */
 @media (max-width: 992px) {
@@ -599,8 +699,8 @@ height: 200px;
                   <li><a href="#goal">Goals</a></li>
                   <li><a href="#initiative">Govt.Initiatives</a></li>
                   <li><a href="#success">Success Stories</a></li>
-                  <li><a href="#">Get Involved</a></li>
-                   <li><a href="#">Contact</a></li>
+                  
+                   <li><a href="#contact">Contact</a></li>
 
             </ul>
         </nav>
@@ -894,6 +994,55 @@ Strengthening India's role on the world stage through strategic partnerships and
     </div>
   </section>
 
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div id="contact">
+    <div class="footer-container">
+      
+      <!-- Get in Touch -->
+      <div class="footer-column">
+        <h3>Get in Touch</h3>
+        <p><a href="mailto:info@viktsitbharat.gov.in">info@viktsitbharat.gov.in</a></p>
+        <p><a href=""></a></p>
+      </div>
+
+      <!-- Share Your Idea -->
+      <div class="footer-column">
+        <h3>Share Your Idea</h3>
+        <form class="idea-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="3" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Important Links -->
+      <div class="footer-column">
+        <h3>Important Links</h3>
+        <ul>
+          <li><a href="#">About the Mission</a></li>
+          <li><a href="#">Key Initiatives</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    </div>
+   
+  </footer>
+
+  
+</body>
+</html>
 
 
 
